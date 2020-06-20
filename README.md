@@ -7,6 +7,7 @@ A Grafana backend plugin that handles rendering panels and dashboards to PNGs us
 - Linux (x64)
 - Windows (x64)
 - Mac OS X (x64)
+- Experimental: arm/v7 and arm64: use `make docker-buildx` after starting the emulator (`docker run --rm --privileged multiarch/qemu-user-static --reset -p yes`) and  `export`ing `REPOSITORY` and `VERSION` (export REPOSITORY=<your-repo>/grafana-image-renderer && export VERSION=<your-tag>) to the docker repo target you want to push to
 
 ### Dependencies
 
